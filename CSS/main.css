@@ -1,0 +1,35 @@
+html {
+    background: #b48e10;
+    font-family: "Helvetica";
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#Title{
+    text-align: center;
+}
+
+#day {
+    text-align: center;
+    border-top: #000000 solid 4px;
+    border-bottom: #000000 solid 2px;
+}
+
+#content {
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding: 1vw;
+}
+
+.classes {
+    padding-left: 2vw;
+    border-bottom: #000000 solid 4px;
+    font-size: 20px;
+}
+
+span {
+    float: right;
+    padding-right: 2vw;
+}
