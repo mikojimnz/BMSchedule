@@ -32,7 +32,7 @@ function Update() {
             if ((hour == 9 && mins >= 32 && mins <= 59) || (hour == 10 && mins >= 0 && mins <= 13)) return "h3";
             if ((hour == 10 && mins >= 19 && mins <= 59) || (hour == 11 && mins == 0)) return "h4";
             if ((hour == 11 && mins >= 6 && mins <= 59) || (hour == 11 && mins >= 0 && mins <= 47)) return "h5";
-            if ((hour == 11 && mins >= 53 && mins <= 59) || (hour == 12 && mins >= 00 && mins >= 34)) return "h6";
+            if ((hour == 11 && mins >= 53 && mins <= 59) || (hour == 12 && mins >= 00 && mins <= 34)) return "h6";
             if ((hour == 12 && mins >= 40 && mins <= 59) || (hour == 1 && mins >= 0 && mins <= 21)) return "h7";
             if ((hour == 1 && mins >= 27 && mins <= 59) || (hour == 2 && mins >= 0 && mins <= 40)) return "h8";
         }
