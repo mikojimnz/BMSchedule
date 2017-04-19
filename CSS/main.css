@@ -6,6 +6,7 @@ html {
 }
 
 #Title{
+    padding-top: 1vh;
     text-align: center;
 }
 
@@ -20,7 +21,6 @@ html {
     width: 100%;
     overflow: hidden;
     word-wrap: break-word;
-    padding: 1vw;
 }
 
 #passing {
