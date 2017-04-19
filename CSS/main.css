@@ -28,12 +28,12 @@ html {
 }
 
 .classes {
-    padding-left: 2vw;
+    padding-left: 1.5vw;
     border-bottom: #000000 solid 4px;
     font-size: 20px;
 }
 
 span {
     float: right;
-    padding-right: 2vw;
+    padding-right: 1.5vw;
 }
