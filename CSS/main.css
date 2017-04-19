@@ -23,6 +23,10 @@ html {
     padding: 1vw;
 }
 
+#passing {
+    text-align: center;
+}
+
 .classes {
     padding-left: 2vw;
     border-bottom: #000000 solid 4px;
