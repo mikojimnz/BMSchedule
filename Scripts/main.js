@@ -43,9 +43,13 @@ function Update() {
     document.getElementById("date").innerHTML = dayFull + ", " + month + " " + date + ", " + year + "<br>" + hour + ":" + min + pm;
     
     if (Hour() != "passing") {
-        document.getElementById(dayShort).getElementsByClassName(Hour())[0].style.color = "#ffffff";
+        var get = document.getElementById(dayShort).getElementsByClassName(Hour())[0].style;
+        get.boxShadow = "0px 0px 15px #505050";
+        get.backgroundColor = "#ffcb3e";
     } else {
-         document.getElementById("passing").style.color = "#ffffff";
+        var get = document.getElementById("passing");
+        get.boxShadow = "0px 0px 15px #505050";
+        get.backgroundColor = "#ffcb3e";
     }
     
     setTimeout(Update, 15000);
