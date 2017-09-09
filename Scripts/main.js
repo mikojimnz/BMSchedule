@@ -44,10 +44,6 @@ function Update() {
     };
 
     document.getElementById("date").innerHTML = dayFull + ", " + month + " " + date + ", " + year + "<br>" + hour + ":" + min + pm;
-
-    if (Hour() != null) {
-        var get = document.getElementById(Day).getElementsByClassName(ClassHour())[0].style;
-    }
     
     if (ClassHour() != null) {
         var get = document.getElementById(dayShort).getElementsByClassName(ClassHour())[0].style;
