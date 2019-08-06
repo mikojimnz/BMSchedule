@@ -1,45 +1,32 @@
-html {
-    background: #ffda3e;
-    font-family: "Helvetica";
-    padding-left: 10px;
-    padding-right: 10px;
+body {
+  /*  background: #ffda3e;*/
+  font-family: "Helvetica";
 }
-
 #Title {
-    padding-top: 1vh;
-    text-align: center;
+  padding-top: 1vh;
 }
-
-#day {
-    text-align: center;
-    border-top: #000000 solid 4px;
-    border-bottom: #000000 solid 2px;
-    font-size: 2vw;
+.day {
+  /*  font-size: 2vw;*/
 }
-
 #content {
-    table-layout: fixed;
-    width: 100%;
-    overflow: hidden;
-    word-wrap: break-word;
+  /*
+  table-layout: fixed;
+  width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+*/
 }
-
 #passing {
-    text-align: center;
+  text-align: center;
 }
-
 .classes {
-    padding-left: 0.5vw;
-    border-bottom: #000000 solid 4px;
-    font-size: 1.5vw;
-    padding-right: 0.5vw;
+  /*  padding-left: 0.5vw;*/
+  font-size: 1.5vw;
+  /*  padding-right: 0.5vw;*/
 }
-
 span {
-    float: right;
+  float: right;
 }
-
-p {
-    margin: 10px;
-    padding: 0.5vh 01vw 0.1vh 0.5vw;
+.list-group-item div p {
+  font-size: 12px;
 }
