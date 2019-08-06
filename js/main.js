@@ -17,7 +17,7 @@ function Update() {
 
   var ClassHour = function () {
     if (dayShort != "wed") {
-      if (hours == 7 && mins >= 40 && mins <= 52) return "hr";
+      if (hours == 7 && mins >= 40 && mins <= 52) return "hrhr";
       if ((hours == 7 && mins >= 58 && mins <= 59) || (hours == 8 && mins >= 0 && mins <= 43)) return "hr1";
       if ((hours == 8 && mins >= 49 && mins <= 59) || (hours == 9 && mins >= 0 && mins <= 34)) return "hr2";
       if ((hours == 9 && mins >= 40 && mins <= 59) || (hours == 10 && mins >= 0 && mins <= 25)) return "hr3";
@@ -27,7 +27,7 @@ function Update() {
       if (hours == 13 && mins >= 4 && mins <= 49) return "hr7";
       if ((hours == 13 && mins >= 55 && mins <= 59) || (hours == 14 && mins >= 0 && mins <= 40)) return "hr8";
     } else if (dayShort == "wed") {
-      if (hours == 7 && mins >= 40 && mins <= 52) return "hr";
+      if (hours == 7 && mins >= 40 && mins <= 52) return "hrhr";
       if ((hours == 7 && mins >= 58 && mins <= 59) || (hours == 8 && mins >= 0 && mins <= 39)) return "hr1";
       if ((hours == 8 && mins >= 45 && mins <= 59) || (hours == 9 && mins >= 0 && mins <= 26)) return "hr2";
       if ((hours == 9 && mins >= 32 && mins <= 59) || (hours == 10 && mins >= 0 && mins <= 13)) return "hr3";
@@ -43,10 +43,12 @@ function Update() {
 
   document.getElementById("date").innerHTML = dayFull + ", " + month + " " + date + ", " + year + "<br>" + hour + ":" + min + pm;
 
-  if (ClassHour() != null) {
-    var get = document.getElementById(dayShort).getElementsByClassName(ClassHour())[0].style;
-    get.boxShadow = "0px 0px 15px #505050";
-    get.backgroundColor = "#ffcb3e";
+  if (ClassHour() === null) {
+    $('#stat-change').removeClass('stat-hide');
+  } else {
+    $('#stat-change').addClass('stat-hide');
+    $('.list-group-item').removeClass('list-group-item-warning');
+    $('#' + dayShort + ' > .card-body > ul > .' + ClassHour()).addClass('list-group-item-warning');
   }
 
   setTimeout(Update, 15000);

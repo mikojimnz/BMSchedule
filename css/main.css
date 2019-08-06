@@ -1,32 +1,21 @@
 body {
-  /*  background: #ffda3e;*/
   font-family: "Helvetica";
 }
 #Title {
   padding-top: 1vh;
 }
-.day {
-  /*  font-size: 2vw;*/
-}
-#content {
-  /*
-  table-layout: fixed;
-  width: 100%;
-  overflow: hidden;
-  word-wrap: break-word;
-*/
-}
 #passing {
   text-align: center;
-}
-.classes {
-  /*  padding-left: 0.5vw;*/
-  font-size: 1.5vw;
-  /*  padding-right: 0.5vw;*/
 }
 span {
   float: right;
 }
+.classes {
+  font-size: 1.5vw;
+}
 .list-group-item div p {
   font-size: 12px;
+}
+.stat-hide {
+  display: none;
 }
