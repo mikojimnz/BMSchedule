@@ -1,361 +1,351 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Bell Schedule</title>
-<meta name="author" content="Miko Jimenez">
-<meta name="description" content="The week's schedule">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bell Schedule</title>
+    <meta name="author" content="Miko Jimenez">
+    <meta name="description" content="The week's schedule">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-1"></div>
-    <div id="Title" class="col-10 text-center">
-      <div class="jumbotron mb-3">
-        <h1 class="display-4">BMCHS Bell Schedule</h1>
-        <p class="lead">
-          <a href="https://github.com/mikojimnz">Made by Miko Jimenez</a>
-        </p>
-        <hr class="my-4">
-        <h2 class="mt-5" id="date"></h2>
-        <h2 class="alert alert-warning" id="stat-change">Changing Classes</h2>
-        <h2 class="alert alert-success" id="stat-out">School Is Out</h2>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div id="title" class="col-10 text-center">
+                <div class="jumbotron mb-3">
+                    <h2 class="mt-5" id="date"></h2>
+                    <h2 class="alert alert-success" id="stat-out">School Is Out</h2>
+                    <h2 class="alert alert-warning" id="stat-change">Changing Classes</h2>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row" id="content">
+            <div class="col-1"></div>
+            <div class="card day col-lg-2 text-center" id="mon">
+                <div class="card-body">
+                    <h5 class="card-title">Monday</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item hrhr">
+                            <div class="row">
+                                <h5 class="col-12">HR</h5>
+                                <p class="col-12">7:40 - 7:52</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr1">
+                            <div class="row">
+                                <h5 class="col-12">1</h5>
+                                <p class="col-12">7:58 - 8:43</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr2">
+                            <div class="row">
+                                <h5 class="col-12">2</h5>
+                                <p class="col-12">8:49 - 9:34</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr3">
+                            <div class="row">
+                                <h5 class="col-12">3</h5>
+                                <p class="col-12">9:40 - 10:25</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr4">
+                            <div class="row">
+                                <h5 class="col-12">4</h5>
+                                <p class="col-12">10:31 - 11:16</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr5">
+                            <div class="row">
+                                <h5 class="col-12">5</h5>
+                                <p class="col-12">11:22 - 12:07</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr6">
+                            <div class="row">
+                                <h5 class="col-12">6</h5>
+                                <p class="col-12">12:13 - 12:58</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr7">
+                            <div class="row">
+                                <h5 class="col-12">7</h5>
+                                <p class="col-12">1:04 - 1:49</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr8">
+                            <div class="row">
+                                <h5 class="col-12">8</h5>
+                                <p class="col-12">1:55 - 2:40</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card day col-lg-2 text-center" id="tues">
+                <div class="card-body">
+                    <h5 class="card-title">Tuesday</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item hrhr">
+                            <div class="row">
+                                <h5 class="col-12">HR</h5>
+                                <p class="col-12">7:40 - 7:52</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr1">
+                            <div class="row">
+                                <h5 class="col-12">2</h5>
+                                <p class="col-12">7:58 - 8:43</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr2">
+                            <div class="row">
+                                <h5 class="col-12">3</h5>
+                                <p class="col-12">8:49 - 9:34</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr3">
+                            <div class="row">
+                                <h5 class="col-12">7</h5>
+                                <p class="col-12">9:40 - 10:25</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr4">
+                            <div class="row">
+                                <h5 class="col-12">4</h5>
+                                <p class="col-12">10:31 - 11:16</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr5">
+                            <div class="row">
+                                <h5 class="col-12">5</h5>
+                                <p class="col-12">11:22 - 12:07</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr6">
+                            <div class="row">
+                                <h5 class="col-12">6</h5>
+                                <p class="col-12">12:13 - 12:58</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr7">
+                            <div class="row">
+                                <h5 class="col-12">8</h5>
+                                <p class="col-12">1:04 - 1:49</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr8">
+                            <div class="row">
+                                <h5 class="col-12">1</h5>
+                                <p class="col-12">1:55 - 2:40</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card day col-lg-2 text-center" id="wed">
+                <div class="card-body">
+                    <h5 class="card-title">Wednesday</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item hrhr">
+                            <div class="row">
+                                <h5 class="col-12">HR</h5>
+                                <p class="col-12">7:40 - 7:52</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr1">
+                            <div class="row">
+                                <h5 class="col-12">3</h5>
+                                <p class="col-12">7:58 - 8:39</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr2">
+                            <div class="row">
+                                <h5 class="col-12">7</h5>
+                                <p class="col-12">8:45 - 9:26</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr3">
+                            <div class="row">
+                                <h5 class="col-12">8</h5>
+                                <p class="col-12">9:32 - 10:13</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr4">
+                            <div class="row">
+                                <h5 class="col-12">4</h5>
+                                <p class="col-12">10:19 - 11:00</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr5">
+                            <div class="row">
+                                <h5 class="col-12">5</h5>
+                                <p class="col-12">11:06 - 11:47</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr6">
+                            <div class="row">
+                                <h5 class="col-12">6</h5>
+                                <p class="col-12">11:53 - 12:34</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr7">
+                            <div class="row">
+                                <h5 class="col-12">1</h5>
+                                <p class="col-12">12:40 - 1:21</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr8">
+                            <div class="row">
+                                <h5 class="col-12">2</h5>
+                                <p class="col-12">1:27 - 2:10</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card day col-lg-2 text-center" id="thurs">
+                <div class="card-body">
+                    <h5 class="card-title">Thursday</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item hrhr">
+                            <div class="row">
+                                <h5 class="col-12">HR</h5>
+                                <p class="col-12">7:40 - 7:52</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr1">
+                            <div class="row">
+                                <h5 class="col-12">7</h5>
+                                <p class="col-12">7:58 - 8:43</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr2">
+                            <div class="row">
+                                <h5 class="col-12">8</h5>
+                                <p class="col-12">8:49 - 9:34</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr3">
+                            <div class="row">
+                                <h5 class="col-12">1</h5>
+                                <p class="col-12">9:40 - 10:25</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr4">
+                            <div class="row">
+                                <h5 class="col-12">4</h5>
+                                <p class="col-12">10:31 - 11:16</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr5">
+                            <div class="row">
+                                <h5 class="col-12">5</h5>
+                                <p class="col-12">11:22 - 12:07</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr6">
+                            <div class="row">
+                                <h5 class="col-12">6</h5>
+                                <p class="col-12">12:13 - 12:58</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr7">
+                            <div class="row">
+                                <h5 class="col-12">2</h5>
+                                <p class="col-12">1:04 - 1:49</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr8">
+                            <div class="row">
+                                <h5 class="col-12">3</h5>
+                                <p class="col-12">1:55 - 2:40</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card day col-lg-2 text-center" id="fri">
+                <div class="card-body">
+                    <h5 class="card-title">Friday</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item hrhr">
+                            <div class="row">
+                                <h5 class="col-12">HR</h5>
+                                <p class="col-12">7:40 - 7:52</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr1">
+                            <div class="row">
+                                <h5 class="col-12">8</h5>
+                                <p class="col-12">7:58 - 8:43</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr2">
+                            <div class="row">
+                                <h5 class="col-12">1</h5>
+                                <p class="col-12">8:49 - 9:34</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr3">
+                            <div class="row">
+                                <h5 class="col-12">2</h5>
+                                <p class="col-12">9:40 - 10:25</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr4">
+                            <div class="row">
+                                <h5 class="col-12">4</h5>
+                                <p class="col-12">10:31 - 11:16</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr5">
+                            <div class="row">
+                                <h5 class="col-12">5</h5>
+                                <p class="col-12">11:22 - 12:07</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr6">
+                            <div class="row">
+                                <h5 class="col-12">6</h5>
+                                <p class="col-12">12:13 - 12:58</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr7">
+                            <div class="row">
+                                <h5 class="col-12">3</h5>
+                                <p class="col-12">1:04 - 1:49</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item hr8">
+                            <div class="row">
+                                <h5 class="col-12">7</h5>
+                                <p class="col-12">1:55 - 2:40</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
     </div>
-    <div class="col-1"></div>
-  </div>
-  <div class="row" id="content">
-    <div class="col-1"></div>
-    <div class="card day col-lg-2 text-center" id="mon">
-      <div class="card-body">
-        <h5 class="card-title">Monday</h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item hrhr">
-            <div class="row">
-              <h5 class="col-12">HR</h5>
-              <p class="col-12">7:40 - 7:52</p>
-            </div>
-          </li>
-          <li class="list-group-item hr1">
-            <div class="row">
-              <h5 class="col-12">1</h5>
-              <p class="col-12">7:58 - 8:43</p>
-            </div>
-          </li>
-          <li class="list-group-item hr2">
-            <div class="row">
-              <h5 class="col-12">2</h5>
-              <p class="col-12">8:49 - 9:34</p>
-            </div>
-          </li>
-          <li class="list-group-item hr3">
-            <div class="row">
-              <h5 class="col-12">3</h5>
-              <p class="col-12">9:40 - 10:25</p>
-            </div>
-          </li>
-          <li class="list-group-item hr4">
-            <div class="row">
-              <h5 class="col-12">4</h5>
-              <p class="col-12">10:31 - 11:16</p>
-            </div>
-          </li>
-          <li class="list-group-item hr5">
-            <div class="row">
-              <h5 class="col-12">5</h5>
-              <p class="col-12">11:22 - 12:07</p>
-            </div>
-          </li>
-          <li class="list-group-item hr6">
-            <div class="row">
-              <h5 class="col-12">6</h5>
-              <p class="col-12">12:13 - 12:58</p>
-            </div>
-          </li>
-          <li class="list-group-item hr7">
-            <div class="row">
-              <h5 class="col-12">7</h5>
-              <p class="col-12">1:04 - 1:49</p>
-            </div>
-          </li>
-          <li class="list-group-item hr8">
-            <div class="row">
-              <h5 class="col-12">8</h5>
-              <p class="col-12">1:55 - 2:40</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="card day col-lg-2 text-center" id="tues">
-      <div class="card-body">
-        <h5 class="card-title">Tuesday</h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item hrhr">
-            <div class="row">
-              <h5 class="col-12">HR</h5>
-              <p class="col-12">7:40 - 7:52</p>
-            </div>
-          </li>
-          <li class="list-group-item hr1">
-            <div class="row">
-              <h5 class="col-12">2</h5>
-              <p class="col-12">7:58 - 8:43</p>
-            </div>
-          </li>
-          <li class="list-group-item hr2">
-            <div class="row">
-              <h5 class="col-12">3</h5>
-              <p class="col-12">8:49 - 9:34</p>
-            </div>
-          </li>
-          <li class="list-group-item hr3">
-            <div class="row">
-              <h5 class="col-12">7</h5>
-              <p class="col-12">9:40 - 10:25</p>
-            </div>
-          </li>
-          <li class="list-group-item hr4">
-            <div class="row">
-              <h5 class="col-12">4</h5>
-              <p class="col-12">10:31 - 11:16</p>
-            </div>
-          </li>
-          <li class="list-group-item hr5">
-            <div class="row">
-              <h5 class="col-12">5</h5>
-              <p class="col-12">11:22 - 12:07</p>
-            </div>
-          </li>
-          <li class="list-group-item hr6">
-            <div class="row">
-              <h5 class="col-12">6</h5>
-              <p class="col-12">12:13 - 12:58</p>
-            </div>
-          </li>
-          <li class="list-group-item hr7">
-            <div class="row">
-              <h5 class="col-12">8</h5>
-              <p class="col-12">1:04 - 1:49</p>
-            </div>
-          </li>
-          <li class="list-group-item hr8">
-            <div class="row">
-              <h5 class="col-12">1</h5>
-              <p class="col-12">1:55 - 2:40</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="card day col-lg-2 text-center" id="wed">
-      <div class="card-body">
-        <h5 class="card-title">Wednesday</h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item hrhr">
-            <div class="row">
-              <h5 class="col-12">HR</h5>
-              <p class="col-12">7:40 - 7:52</p>
-            </div>
-          </li>
-          <li class="list-group-item hr1">
-            <div class="row">
-              <h5 class="col-12">3</h5>
-              <p class="col-12">7:58 - 8:39</p>
-            </div>
-          </li>
-          <li class="list-group-item hr2">
-            <div class="row">
-              <h5 class="col-12">7</h5>
-              <p class="col-12">8:45 - 9:26</p>
-            </div>
-          </li>
-          <li class="list-group-item hr3">
-            <div class="row">
-              <h5 class="col-12">8</h5>
-              <p class="col-12">9:32 - 10:13</p>
-            </div>
-          </li>
-          <li class="list-group-item hr4">
-            <div class="row">
-              <h5 class="col-12">4</h5>
-              <p class="col-12">10:19 - 11:00</p>
-            </div>
-          </li>
-          <li class="list-group-item hr5">
-            <div class="row">
-              <h5 class="col-12">5</h5>
-              <p class="col-12">11:06 - 11:47</p>
-            </div>
-          </li>
-          <li class="list-group-item hr6">
-            <div class="row">
-              <h5 class="col-12">6</h5>
-              <p class="col-12">11:53 - 12:34</p>
-            </div>
-          </li>
-          <li class="list-group-item hr7">
-            <div class="row">
-              <h5 class="col-12">1</h5>
-              <p class="col-12">12:40 - 1:21</p>
-            </div>
-          </li>
-          <li class="list-group-item hr8">
-            <div class="row">
-              <h5 class="col-12">2</h5>
-              <p class="col-12">1:27 - 2:10</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="card day col-lg-2 text-center" id="thurs">
-      <div class="card-body">
-        <h5 class="card-title">Thursday</h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item hrhr">
-            <div class="row">
-              <h5 class="col-12">HR</h5>
-              <p class="col-12">7:40 - 7:52</p>
-            </div>
-          </li>
-          <li class="list-group-item hr1">
-            <div class="row">
-              <h5 class="col-12">7</h5>
-              <p class="col-12">7:58 - 8:43</p>
-            </div>
-          </li>
-          <li class="list-group-item hr2">
-            <div class="row">
-              <h5 class="col-12">8</h5>
-              <p class="col-12">8:49 - 9:34</p>
-            </div>
-          </li>
-          <li class="list-group-item hr3">
-            <div class="row">
-              <h5 class="col-12">1</h5>
-              <p class="col-12">9:40 - 10:25</p>
-            </div>
-          </li>
-          <li class="list-group-item hr4">
-            <div class="row">
-              <h5 class="col-12">4</h5>
-              <p class="col-12">10:31 - 11:16</p>
-            </div>
-          </li>
-          <li class="list-group-item hr5">
-            <div class="row">
-              <h5 class="col-12">5</h5>
-              <p class="col-12">11:22 - 12:07</p>
-            </div>
-          </li>
-          <li class="list-group-item hr6">
-            <div class="row">
-              <h5 class="col-12">6</h5>
-              <p class="col-12">12:13 - 12:58</p>
-            </div>
-          </li>
-          <li class="list-group-item hr7">
-            <div class="row">
-              <h5 class="col-12">2</h5>
-              <p class="col-12">1:04 - 1:49</p>
-            </div>
-          </li>
-          <li class="list-group-item hr8">
-            <div class="row">
-              <h5 class="col-12">3</h5>
-              <p class="col-12">1:55 - 2:40</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="card day col-lg-2 text-center" id="fri">
-      <div class="card-body">
-        <h5 class="card-title">Friday</h5>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item hrhr">
-            <div class="row">
-              <h5 class="col-12">HR</h5>
-              <p class="col-12">7:40 - 7:52</p>
-            </div>
-          </li>
-          <li class="list-group-item hr1">
-            <div class="row">
-              <h5 class="col-12">8</h5>
-              <p class="col-12">7:58 - 8:43</p>
-            </div>
-          </li>
-          <li class="list-group-item hr2">
-            <div class="row">
-              <h5 class="col-12">1</h5>
-              <p class="col-12">8:49 - 9:34</p>
-            </div>
-          </li>
-          <li class="list-group-item hr3">
-            <div class="row">
-              <h5 class="col-12">2</h5>
-              <p class="col-12">9:40 - 10:25</p>
-            </div>
-          </li>
-          <li class="list-group-item hr4">
-            <div class="row">
-              <h5 class="col-12">4</h5>
-              <p class="col-12">10:31 - 11:16</p>
-            </div>
-          </li>
-          <li class="list-group-item hr5">
-            <div class="row">
-              <h5 class="col-12">5</h5>
-              <p class="col-12">11:22 - 12:07</p>
-            </div>
-          </li>
-          <li class="list-group-item hr6">
-            <div class="row">
-              <h5 class="col-12">6</h5>
-              <p class="col-12">12:13 - 12:58</p>
-            </div>
-          </li>
-          <li class="list-group-item hr7">
-            <div class="row">
-              <h5 class="col-12">3</h5>
-              <p class="col-12">1:04 - 1:49</p>
-            </div>
-          </li>
-          <li class="list-group-item hr8">
-            <div class="row">
-              <h5 class="col-12">7</h5>
-              <p class="col-12">1:55 - 2:40</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-1"></div>
-  </div>
-</div>
 </body>
 <script type="application/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script>
-   var check = function(){
-      var now = new Date();
-      var daysShort = ["sun", "mon", "tues", "wed", "thurs", "fri", "sat"];
-      window.location.replace('https://mikojimnz.github.io/BMSchedule/#'+ daysShort[now.getDay()]);
-   }
-   setTimeout(check, 2000);
-</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107337032-6"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-107337032-6');
-</script>
-</html>
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107337032-6');
+</script></html>

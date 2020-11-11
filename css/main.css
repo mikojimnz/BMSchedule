@@ -1,21 +1,31 @@
 body {
-  font-family: "Helvetica";
+    font-family: "Helvetica";
 }
-#Title {
-  padding-top: 1vh;
+
+#title {
+    padding-top: 1vh;
 }
+
 #passing {
-  text-align: center;
+    text-align: center;
 }
+
 span {
-  float: right;
+    float: right;
 }
+
+.card-title {
+    font-size: 100%;
+}
+
 .classes {
-  font-size: 1.5vw;
+    font-size: 1.5vw;
 }
+
 .list-group-item div p {
-  font-size: 12px;
+    font-size: 12px;
 }
+
 .stat-hide {
-  display: none;
+    display: none;
 }
